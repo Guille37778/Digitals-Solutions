@@ -8,9 +8,12 @@ const currentPath = pathname.replace(base, '').replace(/\/$/, '');
   <div class="max-w-[1500px] w-full px-6 md:px-12 flex items-center justify-between">
     
     <!-- BRAND (Left) -->
-    <a href={base} class="flex flex-col h-min leading-none tracking-widest uppercase group shrink-0 relative z-[110]">
-      <span class="font-black text-2xl italic mb-1">Digital</span>
-      <span class="font-bold text-[10px] opacity-60 border-t border-white/20 pt-1">Solutions</span>
+    <a href={base} class="flex items-center gap-3 h-min leading-none tracking-widest uppercase group shrink-0 relative z-[110]">
+      <img src={`${base}logo-ds.png`} alt="Digital Solutions Logo" class="w-10 h-10 object-contain" />
+      <div class="flex flex-col">
+        <span class="font-black text-2xl italic mb-1">Digital</span>
+        <span class="font-bold text-[10px] opacity-60 border-t border-white/20 pt-1">Solutions</span>
+      </div>
     </a>
 
     <!-- DESKTOP LINKS (Hidden on Mobile) -->
