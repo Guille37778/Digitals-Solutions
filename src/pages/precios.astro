@@ -1,0 +1,359 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Planes y Precios | Digital Solutions">
+  
+  <!-- 1. HERO PRECIOS (High Impact) -->
+  <section class="relative bg-[#0f172a] text-white pt-32 pb-32 lg:pt-48 lg:pb-40 overflow-hidden flex items-center">
+    <!-- Abstract wavy elements -->
+    <div class="absolute top-0 right-0 w-2/3 h-full bg-[#1e3a8a] rounded-bl-full opacity-50 pointer-events-none transform translate-x-1/4"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none opacity-40"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 w-full fade-in-up">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+
+        <!-- Text (Left) -->
+        <div class="w-full lg:w-3/5 text-center lg:text-left space-y-8">
+          <div class="inline-block bg-white/10 backdrop-blur-md border border-white/20 text-white px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-sm">
+            Tu Inversión, Tu Propiedad
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl lg:text-[7.5rem] font-black tracking-tighter leading-[0.9] lg:leading-[0.8]">
+            Planes de <br />
+            <span class="text-[#93c5fd]">Ingeniería Web<span class="text-white">.</span></span>
+          </h1>
+
+          <p class="text-xl text-[#bfdbfe] max-w-2xl leading-relaxed font-medium opacity-90 mx-auto lg:mx-0">
+            Diseño y arquitectura web de alto rendimiento. Pago único y la página web es tuya, libre de mensualidades ocultas.
+          </p>
+
+          <!-- Stats row -->
+          <div class="flex flex-wrap gap-8 pt-4 justify-center lg:justify-start">
+            <div class="text-center lg:text-left">
+              <div class="text-3xl font-black text-white">5</div>
+              <div class="text-[10px] text-[#93c5fd] font-black uppercase tracking-widest">Planes</div>
+            </div>
+            <div class="w-px bg-white/20 hidden lg:block"></div>
+            <div class="text-center lg:text-left">
+              <div class="text-3xl font-black text-white">100%</div>
+              <div class="text-[10px] text-[#93c5fd] font-black uppercase tracking-widest">Tuyo</div>
+            </div>
+            <div class="w-px bg-white/20 hidden lg:block"></div>
+            <div class="text-center lg:text-left">
+              <div class="text-3xl font-black text-white">$0</div>
+              <div class="text-[10px] text-[#93c5fd] font-black uppercase tracking-widest">Mensualidad</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abstract Visual Box (Right) -->
+        <div class="w-full lg:w-2/5 relative hidden lg:block">
+          <div class="aspect-square bg-gradient-to-br from-[#2563eb] to-[#1e40af] rounded-[3.5rem] -rotate-3 relative overflow-hidden shadow-2xl border border-white/10 group flex items-center justify-center">
+            <div class="absolute inset-0 bg-blue-600/10 group-hover:scale-110 transition-transform duration-700"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-20 group-hover:rotate-12 group-hover:scale-110 transition-all duration-700">
+              <svg class="w-48 h-48 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M4 19h16a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+            <!-- Floating price tag -->
+            <div class="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-white">
+              <div class="text-[10px] font-black uppercase tracking-widest text-[#93c5fd] mb-1">Desde</div>
+              <div class="text-4xl font-black tracking-tighter">$180 <span class="text-[#93c5fd] text-xl">USD</span></div>
+              <div class="text-[10px] text-white/50 font-bold uppercase tracking-widest mt-1">Sin mensualidades</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 2. PRICING GRID (Static & Responsive) -->
+  <section class="py-32 bg-white relative z-20 -mt-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative">
+      <div id="pricingGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12">
+        
+        <!-- CARD 1: BRANDING -->
+        <div class="eng-hover glow-on-hover relative bg-white rounded-[3rem] p-8 border-2 border-slate-100 shadow-lg hover:shadow-2xl overflow-hidden group flex flex-col justify-between h-full border-b-[6px] border-b-slate-200 hover:border-b-[#2563eb] hover:border-[#2563eb]/30 transition-all duration-300">
+          <div class="flex-grow flex flex-col">
+            <div class="w-14 h-14 bg-blue-50 text-[#2563eb] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform mb-8 border border-blue-100/50">
+              <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-black text-[#0f172a] tracking-tighter leading-none mb-3">Diseños de Branding</h3>
+              <p class="text-slate-400 text-[12px] leading-relaxed font-semibold opacity-80">Identidad corporativa y sistemas visuales de alto impacto.</p>
+            </div>
+            <ul class="space-y-3 py-6 border-t border-slate-50 text-[12px] text-slate-500 font-bold tracking-tight mb-6">
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Manual de Marca Integral</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Diseño de Logotipo Maestro</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Psicología del Color</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Tipografías Corporativas</li>
+            </ul>
+             <a href="/servicios/branding" class="text-[11px] font-black text-[#2563eb] hover:underline mb-8 block uppercase tracking-widest">Ver detalles técnicos &rarr;</a>
+          </div>
+          <div class="pt-6 border-t border-slate-50 space-y-4">
+            <div>
+               <span class="text-slate-300 text-[10px] font-black line-through mb-1 block uppercase tracking-widest">$280 USD</span>
+               <div class="flex items-baseline gap-2"><span class="text-4xl font-black text-[#2563eb] tracking-tighter">$180</span><span class="text-slate-400 text-[9px] font-black uppercase tracking-[0.2em]">Total</span></div>
+            </div>
+            <a href="https://wa.me/584124683230" target="_blank" class="w-full py-4 text-white font-black tracking-widest uppercase rounded-2xl bg-[#25D366] hover:bg-[#22c55e] transition-all text-center flex justify-center items-center gap-2 text-[10px]">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- CARD 2: LANDING PAGE -->
+        <div class="eng-hover glow-on-hover relative bg-white rounded-[3rem] p-8 border-2 border-slate-100 shadow-lg hover:shadow-2xl overflow-hidden group flex flex-col justify-between h-full border-b-[6px] border-b-slate-200 hover:border-b-[#2563eb] hover:border-[#2563eb]/30 transition-all duration-300">
+          <div class="flex-grow flex flex-col">
+            <div class="w-14 h-14 bg-blue-50 text-[#2563eb] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform mb-8 border border-blue-100/50">
+              <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-black text-[#0f172a] tracking-tighter leading-none mb-3">Landing Page Informativa</h3>
+              <p class="text-slate-400 text-[12px] leading-relaxed font-semibold opacity-80">Ideal para captar leads y campañas de marketing específicas.</p>
+            </div>
+            <ul class="space-y-3 py-6 border-t border-slate-50 text-[12px] text-slate-500 font-bold tracking-tight mb-6">
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Diseño de Una Sola Página</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Copywriting Persuasivo</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Formulario de Contacto</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Botón Directo a WhatsApp</li>
+            </ul>
+            <a href="/servicios/landing-page" class="text-[11px] font-black text-[#2563eb] hover:underline mb-8 block uppercase tracking-widest">Ver detalles técnicos &rarr;</a>
+          </div>
+          <div class="pt-6 border-t border-slate-50 space-y-4">
+            <div>
+               <span class="text-slate-300 text-[10px] font-black line-through mb-1 block uppercase tracking-widest">$300 USD</span>
+               <div class="flex items-baseline gap-2"><span class="text-4xl font-black text-[#2563eb] tracking-tighter">$180</span><span class="text-slate-400 text-[9px] font-black uppercase tracking-[0.2em]">Total</span></div>
+            </div>
+            <a href="https://wa.me/584124683230" target="_blank" class="w-full py-4 text-white font-black tracking-widest uppercase rounded-2xl bg-[#25D366] hover:bg-[#22c55e] transition-all text-center flex justify-center items-center gap-2 text-[10px]">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- CARD 3: WEB CORPORATIVA (Featured) -->
+        <div class="eng-hover glow-on-hover relative bg-[#0f172a] rounded-[3rem] p-8 border-2 border-[#2563eb]/40 shadow-[0_8px_40px_rgba(37,99,235,0.25)] hover:shadow-[0_16px_60px_rgba(37,99,235,0.4)] overflow-hidden group text-white flex flex-col justify-between h-full z-30 border-b-[6px] border-b-[#2563eb] transition-all duration-300">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent opacity-50 pointer-events-none"></div>
+          <div class="absolute top-10 -right-12 bg-[#2563eb] text-white px-12 py-1.5 rotate-45 text-[9px] font-black uppercase tracking-[0.3em] shadow-2xl z-20">HOT</div>
+          <div class="flex-grow flex flex-col relative z-10">
+            <div class="w-14 h-14 bg-[#2563eb] text-white rounded-2xl flex items-center justify-center shadow-[0_10px_30px_rgba(37,99,235,0.4)] mb-8 border border-white/20">
+              <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-black text-white tracking-tighter leading-none mb-3">Página Web Corporativa</h3>
+              <p class="text-slate-400 text-[12px] leading-relaxed font-semibold opacity-90">Sitio multi-página con arquitectura avanzada.</p>
+            </div>
+            <ul class="space-y-3 py-6 border-t border-slate-800 text-[12px] text-slate-100 font-bold tracking-tight mb-6">
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#60a5fa]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Hasta 7 Secciones</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#60a5fa]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Arquitectura Progresiva</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#60a5fa]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Blog Autogestionable</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#60a5fa]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>SEO Técnico Avanzado</li>
+            </ul>
+            <a href="/servicios/web-corporativa" class="text-[11px] font-black text-[#60a5fa] hover:underline mb-8 block uppercase tracking-widest font-mono">_Ver detalles &rarr;</a>
+          </div>
+          <div class="pt-6 border-t border-slate-800 space-y-4 relative z-10">
+            <div>
+               <span class="text-slate-500 text-[10px] font-black line-through mb-1 block uppercase tracking-widest">$420 USD</span>
+               <div class="flex items-baseline gap-2"><span class="text-4xl font-black text-[#60a5fa] tracking-tighter">$300</span><span class="text-slate-400 text-[9px] font-black uppercase tracking-[0.2em]">Desde</span></div>
+            </div>
+            <a href="https://wa.me/584124683230" target="_blank" class="w-full py-4 text-white font-black tracking-widest uppercase rounded-2xl bg-[#2563eb] hover:bg-[#3b82f6] shadow-[0_20px_40px_rgba(37,99,235,0.4)] transition-all text-center flex justify-center items-center gap-2 text-[10px]">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- CARD 4: TIENDA PYME -->
+        <div class="eng-hover glow-on-hover relative bg-white rounded-[3rem] p-8 border-2 border-slate-100 shadow-lg hover:shadow-2xl overflow-hidden group flex flex-col justify-between h-full border-b-[6px] border-b-slate-200 hover:border-b-[#2563eb] hover:border-[#2563eb]/30 transition-all duration-300">
+          <div class="flex-grow flex flex-col">
+            <div class="w-14 h-14 bg-blue-50 text-[#2563eb] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform mb-8 border border-blue-100/50">
+              <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-black text-[#0f172a] tracking-tighter leading-none mb-3">Tienda Online PYME</h3>
+              <p class="text-slate-400 text-[12px] leading-relaxed font-semibold opacity-80">Ideal para vender con Google Sheets & WhatsApp.</p>
+            </div>
+            <ul class="space-y-3 py-6 border-t border-slate-50 text-[12px] text-slate-500 font-bold tracking-tight mb-6">
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Catálogo Google Sheets</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Carrito Premium</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Pedidos Vía WhatsApp</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Buscador Inteligente</li>
+            </ul>
+            <a href="/servicios/ecommerce-pyme" class="text-[11px] font-black text-[#2563eb] hover:underline mb-8 block uppercase tracking-widest">Ver detalles técnicos &rarr;</a>
+          </div>
+          <div class="pt-6 border-t border-slate-50 space-y-4">
+            <div>
+               <span class="text-slate-300 text-[10px] font-black line-through mb-1 block uppercase tracking-widest">$300 USD</span>
+               <div class="flex items-baseline gap-2"><span class="text-4xl font-black text-[#2563eb] tracking-tighter">$180</span><span class="text-slate-400 text-[9px] font-black uppercase tracking-[0.2em]">Total</span></div>
+            </div>
+            <a href="https://wa.me/584124683230" target="_blank" class="w-full py-4 text-white font-black tracking-widest uppercase rounded-2xl bg-[#25D366] hover:bg-[#22c55e] transition-all text-center flex justify-center items-center gap-2 text-[10px]">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- CARD 5: TIENDA EMPRESA -->
+        <div class="eng-hover glow-on-hover relative bg-white rounded-[3rem] p-8 border-2 border-slate-100 shadow-lg hover:shadow-2xl overflow-hidden group flex flex-col justify-between h-full border-b-[6px] border-b-slate-200 hover:border-b-[#2563eb] hover:border-[#2563eb]/30 transition-all duration-300">
+          <div class="flex-grow flex flex-col">
+            <div class="w-14 h-14 bg-blue-50 text-[#2563eb] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform mb-8 border border-blue-100/50">
+              <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-xl font-black text-[#0f172a] tracking-tighter leading-none mb-3">Tienda Online Empresa</h3>
+              <p class="text-slate-400 text-[12px] leading-relaxed font-semibold opacity-80">E-commerce de alto rendimiento Headless.</p>
+            </div>
+            <ul class="space-y-3 py-6 border-t border-slate-50 text-[12px] text-slate-500 font-bold tracking-tight mb-6">
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Pagos (Stripe/PayPal)</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Panel Administrativo</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Gestión Masiva SKUs</li>
+              <li class="flex items-center gap-3"><svg class="w-3.5 h-3.5 text-[#2563eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>Soporte Priority 24/7</li>
+            </ul>
+            <a href="/servicios/ecommerce-empresa" class="text-[11px] font-black text-[#2563eb] hover:underline mb-8 block uppercase tracking-widest">Ver detalles técnicos &rarr;</a>
+          </div>
+          <div class="pt-6 border-t border-slate-50 space-y-4">
+            <div>
+               <span class="text-slate-300 text-[10px] font-black line-through mb-1 block uppercase tracking-widest">$480 USD</span>
+               <div class="flex items-baseline gap-2"><span class="text-4xl font-black text-[#2563eb] tracking-tighter">$300</span><span class="text-slate-400 text-[9px] font-black uppercase tracking-[0.2em]">Desde</span></div>
+            </div>
+            <a href="https://wa.me/584124683230" target="_blank" class="w-full py-4 text-white font-black tracking-widest uppercase rounded-2xl bg-[#25D366] hover:bg-[#22c55e] transition-all text-center flex justify-center items-center gap-2 text-[10px]">Cotizar WhatsApp</a>
+          </div> <!-- Close Info Div -->
+        </div> <!-- Close CARD 5 -->
+
+      </div> <!-- End of pricingGrid -->
+    </div> <!-- Close Container Div -->
+  </section>
+  <!-- 3. TRUST BANNER: ALL PLANS INCLUDE -->
+  <section class="py-24 bg-[#0f172a] text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[#1e40af]/10 opacity-30"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16">
+        <span class="text-[#60a5fa] font-black text-[10px] uppercase tracking-[0.3em] block mb-2">Compromiso Digital Solutions</span>
+        <h2 class="text-4xl font-black text-white">Incluido en todos nuestros planes</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center text-white">
+        <!-- Benefit 1 -->
+        <div class="space-y-4">
+          <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto text-[#60a5fa]">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h4 class="font-bold text-sm">Carga en &lt; 1s</h4>
+          <p class="text-xs text-slate-400">Rendimiento Ultra Rápido</p>
+        </div>
+        <!-- Benefit 2 -->
+        <div class="space-y-4">
+          <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto text-[#60a5fa]">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 21a10.003 10.003 0 008.384-4.51l.054.09m-4.283-9.912a10.018 10.018 0 012.263 6.134m-9.458-6.134a10.018 10.018 0 00-2.263 6.134M12 3a9 9 0 00-9 9c0 5 4 9 9 9s9-4 9-9-4-9-9-9z"></path></svg>
+          </div>
+          <h4 class="font-bold text-sm">Seguridad SSL</h4>
+          <p class="text-xs text-slate-400">Certificado Incluido</p>
+        </div>
+        <!-- Benefit 3 -->
+        <div class="space-y-4">
+          <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto text-[#60a5fa]">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+          </div>
+          <h4 class="font-bold text-sm">SEO Fundacional</h4>
+          <p class="text-xs text-slate-400">Listo para Google</p>
+        </div>
+        <!-- Benefit 4 -->
+        <div class="space-y-4">
+          <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto text-[#60a5fa]">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+          </div>
+          <h4 class="font-bold text-sm">Mobile-First</h4>
+          <p class="text-xs text-slate-400">Perfecto en Dispositivos</p>
+        </div>
+        <!-- Benefit 5 -->
+        <div class="space-y-4">
+          <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto text-[#60a5fa]">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+          </div>
+          <h4 class="font-bold text-sm">Propiedad Real</h4>
+          <p class="text-xs text-slate-400">Sin Mensualidades</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. FAQ SECTION (Interactive) -->
+  <section class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-[#2563eb] font-black text-[10px] uppercase tracking-[0.3em] block mb-2">Preguntas Frecuentes</span>
+        <h2 class="text-4xl font-black text-[#0f172a]">Dudas sobre inversión</h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group border border-slate-100 rounded-2xl p-6 hover:bg-[#f8fafc] transition-all bg-white shadow-sm open:bg-[#f8fafc] open:-translate-y-1">
+          <summary class="flex justify-between items-center font-bold text-[#0f172a] text-lg cursor-pointer list-none outline-none">
+            ¿El pago es veramente único?
+            <svg class="w-5 h-5 text-[#2563eb] transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+          </summary>
+          <div class="text-slate-500 text-sm mt-4 leading-relaxed font-medium"> 
+            <p>Sí. No cobramos mensualidades por usar nuestra tecnología. Una vez entregado el proyecto, el código es propiedad absoluta de tu empresa. Solo deberás renovar tu dominio y hosting anualmente con los proveedores externos, los cuales te ayudamos a configurar.</p>
+          </div>
+        </details>
+
+        <details class="group border border-slate-100 rounded-2xl p-6 hover:bg-[#f8fafc] transition-all bg-white shadow-sm open:bg-[#f8fafc] open:-translate-y-1">
+          <summary class="flex justify-between items-center font-bold text-[#0f172a] text-lg cursor-pointer list-none outline-none">
+            ¿Cómo se gestiona el contenido de la tienda?
+            <svg class="w-5 h-5 text-[#2563eb] transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+          </summary>
+          <div class="text-slate-500 text-sm mt-4 leading-relaxed font-medium">
+            <p>Para el plan PYME, conectamos tu sitio a una hoja de Google Sheets. Cada vez que cambias un precio o foto en el Excel, la web se actualiza automáticamente. Es la forma más fácil y rápida del mercado para gestionar un catálogo sin complicaciones técnicas.</p>
+          </div>
+        </details>
+
+        <details class="group border border-slate-100 rounded-2xl p-6 hover:bg-[#f8fafc] transition-all bg-white shadow-sm open:bg-[#f8fafc] open:-translate-y-1">
+          <summary class="flex justify-between items-center font-bold text-[#0f172a] text-lg cursor-pointer list-none outline-none">
+            ¿Tienen garantía de soporte?
+            <svg class="w-5 h-5 text-[#2563eb] transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+          </summary>
+          <div class="text-slate-500 text-sm mt-4 leading-relaxed font-medium">
+            <p>Todos nuestros proyectos incluyen 30 días de soporte post-lanzamiento para ajustes menores y resolución de dudas técnicas. Además, entregamos una guía rápida de administración para que seas 100% independiente.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ANIMATED TRUST MARQUEE (Enhanced) -->
+  <section class="py-20 bg-[#f8fafc] border-y border-slate-100 overflow-hidden relative">
+    <div class="flex marquee-container gap-12 md:gap-20 opacity-20 grayscale select-none">
+      <div class="flex items-center gap-12 md:gap-20 whitespace-nowrap marquee-track">
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">LANZA TU PROYECTO</span>
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">ESCALA TU NEGOCIO</span>
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">SIN MENSUALIDADES</span>
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">TU WEB ES TUYA</span>
+      </div>
+      <div class="flex items-center gap-12 md:gap-20 whitespace-nowrap marquee-track" aria-hidden="true">
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">LANZA TU PROYECTO</span>
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">ESCALA TU NEGOCIO</span>
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">SIN MENSUALIDADES</span>
+         <span class="text-[#0f172a] font-black text-3xl md:text-5xl tracking-tighter italic">TU WEB ES TUYA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FINAL CTA -->
+  <section class="py-24 bg-white text-center">
+    <div class="max-w-3xl mx-auto px-6">
+       <h2 class="text-4xl font-black text-[#0f172a] tracking-tight mb-8">¿Listo para construir tu infraestructura digital?</h2>
+       <p class="text-slate-500 mb-10 font-medium">Si tu proyecto requiere un desarrollo a medida o integración de sistemas específicos, hablemos. La ingeniería no tiene límites.</p>
+       <a href="/contacto" class="bg-[#0f172a] text-white text-xs sm:text-base px-6 sm:px-10 py-5 rounded-3xl sm:rounded-full font-black tracking-widest uppercase hover:bg-slate-800 transition-all shadow-2xl flex items-center gap-4 justify-center mx-auto w-full sm:w-max group">
+          Consultar Arquitectura Especializada
+          <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+       </a>
+    </div>
+  </section>
+
+  <style>
+    .marquee-container {
+      display: flex;
+      width: max-content;
+    }
+    .marquee-track {
+      animation: marquee 40s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+
+</Layout>

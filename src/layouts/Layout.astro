@@ -1,0 +1,132 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Digital Solutions - Ingeniería Web de Alto Impacto y Diseño Premium" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth bg-[#FAFAFA]">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<title>{title}</title>
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200" />
+
+		<script is:inline>
+			// Prevenir FOUC (Flash of Unstyled Content) al activar las animaciones solo si JS está activo
+			document.documentElement.classList.add('js-enabled');
+		</script>
+		
+		<script type="application/ld+json" is:inline>
+			{
+			  "@context": "https://schema.org",
+			  "@type": "ProfessionalService",
+			  "name": "Digital Solutions",
+			  "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+			  "description": "Agencia de Ingeniería Web de Alto Impacto y Diseño Premium utilizando Astro, React y tecnologías modernas.",
+			  "address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Valencia",
+				"addressCountry": "VE"
+			  },
+			  "url": "https://digitalsolutions.com"
+			}
+		</script>
+
+		<ClientRouter />
+	</head>
+	<body class="text-[#0A0F1E] font-jakarta antialiased selection:bg-[#0A0F1E] selection:text-white flex flex-col min-h-screen">
+		<Navbar />
+		<main class="flex-grow">
+			<slot />
+		</main>
+		<Footer />
+		<WhatsAppButton />
+
+		<!-- GLOBAL ENTRANCE ANIMATIONS SCRIPT -->
+		<script>
+			const initGlobalAnimations = () => {
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							// Add staggered delay specifically for grid cards (services, cases, etc)
+							if (entry.target.parentElement?.classList.contains('grid')) {
+								const cards = Array.from(entry.target.parentElement.children);
+								const index = cards.indexOf(entry.target);
+								entry.target.style.transitionDelay = `${index * 0.15}s`;
+							}
+							
+							entry.target.classList.add('reveal-active');
+							observer.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+				// Targets correspond to the ones in global.css
+				const selectors = 'main section h1, main section h2, main section h3, main section p, main section img, main section .grid > div, main section form, main section details';
+				document.querySelectorAll(selectors).forEach((el) => {
+					observer.observe(el);
+				});
+			};
+
+			initGlobalAnimations();
+			document.addEventListener('astro:after-swap', initGlobalAnimations);
+		</script>
+
+		<!-- GOOGLE TRANSLATE CORE (HIDDEN) -->
+		<div id="google_translate_element2" style="display:none;"></div>
+		<script is:inline>
+			function googleTranslateElementInit2() {
+				new google.translate.TranslateElement({pageLanguage: 'es', autoDisplay: false}, 'google_translate_element2');
+			}
+			function doGTranslate(langPair) {
+				if(langPair.value) langPair=langPair.value;
+				if(langPair=='')return;
+				var lang = langPair.split('|')[1];
+				
+				// BUGFIX: Establecer la cookie de Google a la fuerza antes de disparar nada (soluciona el bug del doble click)
+				document.cookie = "googtrans=/es/" + lang + "; path=/";
+				document.cookie = "googtrans=/es/" + lang + "; path=/; domain=" + location.hostname;
+
+				var teCombo = document.querySelector('.goog-te-combo');
+				
+				if (!teCombo) {
+					// Si el combo falla brutalmente tras establecer la cookie, forzamos recarga para que lea la cookie instantáneamente.
+					window.location.reload();
+					return;
+				}
+				
+				teCombo.value = lang;
+				teCombo.dispatchEvent(new Event('change', { bubbles: true, cancelable: true }));
+			}
+		</script>
+		<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2" is:inline></script>
+	</body>
+</html>

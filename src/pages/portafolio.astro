@@ -1,0 +1,276 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Portafolio | Digital Solutions">
+  
+  <!-- HERO PORTAFOLIO -->
+  <section class="relative bg-[#1e1b4b] text-white pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center">
+    <div class="absolute top-0 right-0 w-2/3 h-full bg-[#312e81] rounded-bl-full opacity-50 pointer-events-none transform translate-x-1/4"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none opacity-40"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 w-full fade-in-up">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+
+        <!-- Text (Left) -->
+        <div class="w-full lg:w-3/5 text-center lg:text-left space-y-8">
+          <div class="inline-block bg-[#3b82f6] text-white px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-sm">
+            Ingeniería Realizada
+          </div>
+
+          <h1 class="text-5xl sm:text-6xl lg:text-[7.5rem] font-black tracking-tighter leading-[0.9] lg:leading-[0.8]">
+            Potenciando<br />
+            <span class="text-[#93c5fd]">Futuros<span class="text-white">.</span></span>
+          </h1>
+
+          <p class="text-[#bfdbfe] text-lg max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed opacity-90">
+            Soluciones de arquitectura web de alto impacto. Ingeniería de software diseñada para empresas que no aceptan menos que la perfección.
+          </p>
+
+          <div class="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start">
+            <a href="/contacto" class="bg-white text-[#1d4ed8] px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-blue-50 transition-all shadow-xl">Iniciar Proyecto</a>
+            <a href="/precios" class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-all">Ver Planes</a>
+          </div>
+        </div>
+
+        <!-- Abstract Visual Box (Right) -->
+        <div class="w-full lg:w-2/5 relative hidden lg:block">
+          <div class="aspect-square bg-gradient-to-br from-[#2563eb] to-[#1e40af] rounded-[3.5rem] rotate-3 relative overflow-hidden shadow-2xl border border-white/10 group flex items-center justify-center">
+            <div class="absolute inset-0 bg-blue-600/10 group-hover:scale-110 transition-transform duration-700"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-20 group-hover:rotate-12 group-hover:scale-110 transition-all duration-700">
+              <!-- Portfolio/grid icon -->
+              <svg class="w-48 h-48 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+              </svg>
+            </div>
+            <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+            <!-- Floating project count badge -->
+            <div class="absolute top-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-white">
+              <div class="text-[10px] font-black uppercase tracking-widest text-[#93c5fd] mb-1">Proyectos Entregados</div>
+              <div class="flex items-end gap-2">
+                <span class="text-4xl font-black tracking-tighter">+20</span>
+                <span class="text-[#93c5fd] text-sm font-black pb-1">Clientes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 1. TECH STACK (Professional) -->
+  <section class="py-24 bg-[#f8fafc]">
+    <div class="max-w-7xl mx-auto px-6 fade-in-up" style="animation-delay: 0.1s;">
+      <div class="text-center mb-16">
+        <span class="text-[#2563eb] font-bold text-sm tracking-wider uppercase block mb-2">Especialización</span>
+        <h2 class="text-4xl lg:text-5xl font-bold text-[#0f172a] leading-tight">Stack Tecnológico que utilizamos</h2>
+        <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Las herramientas exactas para construir experiencias digitales inigualables y rápidas.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Next.js/React -->
+        <div class="bg-white rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl group border border-slate-100">
+          <div class="w-14 h-14 bg-[#eff6ff] text-[#2563eb] rounded-full flex flex-shrink-0 items-center justify-center mb-6 transition-transform group-hover:scale-110">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3 class="font-bold text-[#0f172a] text-xl mb-3">Next.js & Astro</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">Frameworks modernos para renderizado híbrido y estático. Velocidad de carga insuperable.</p>
+        </div>
+
+        <!-- Tailwind -->
+        <div class="bg-white rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl group border border-slate-100">
+          <div class="w-14 h-14 bg-[#eff6ff] text-[#2563eb] rounded-full flex flex-shrink-0 items-center justify-center mb-6 transition-transform group-hover:scale-110">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+          </div>
+          <h3 class="font-bold text-[#0f172a] text-xl mb-3">Tailwind CSS</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">Sistemas de diseño corporativos y consistentes, garantizando perfección visual a nivel de píxel.</p>
+        </div>
+
+        <!-- JS/TS -->
+        <div class="bg-white rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl group border border-slate-100">
+          <div class="w-14 h-14 bg-[#eff6ff] text-[#2563eb] rounded-full flex flex-shrink-0 items-center justify-center mb-6 transition-transform group-hover:scale-110">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </div>
+          <h3 class="font-bold text-[#0f172a] text-xl mb-3">TypeScript</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">Código tipado que asegura robustez, escalabilidad y una experiencia de alta disponibilidad.</p>
+        </div>
+
+        <!-- Headless -->
+        <div class="bg-[#1e40af] rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl group text-white">
+          <div class="w-14 h-14 bg-[#3b82f6] text-white rounded-full flex flex-shrink-0 items-center justify-center mb-6 transition-transform group-hover:scale-110">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          </div>
+          <h3 class="font-bold text-xl mb-3 border-b border-[#3b82f6] pb-3">Headless CMS</h3>
+          <p class="text-sm text-[#93c5fd] leading-relaxed">Gestores de contenido desacoplados para administrar la web con facilidad de impacto mundial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. METODOLOGÍA (Process Flow) -->
+  <section class="py-24 bg-white border-b border-slate-100">
+    <div class="max-w-5xl mx-auto px-6 fade-in-up" style="animation-delay: 0.2s;">
+      <div class="text-center mb-16">
+        <span class="text-[#2563eb] font-bold text-sm tracking-wider uppercase block mb-2">Nuestro Proceso</span>
+        <h2 class="text-4xl lg:text-5xl font-bold text-[#0f172a] leading-tight">Flujo de Ejecución Correcto</h2>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Step 01 -->
+        <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:border-[#2563eb] transition-all duration-500">
+          <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+            <div class="w-16 h-16 rounded-full bg-[#eff6ff] flex items-center justify-center flex-shrink-0">
+              <span class="text-2xl font-black text-[#2563eb]">01</span>
+            </div>
+            <div>
+               <h3 class="text-xl font-bold text-[#0f172a] mb-2">Discovery & Estrategia</h3>
+               <p class="text-slate-500 leading-relaxed text-sm">Analizamos tu modelo de negocio exhaustivamente para estructurar una navegación corporativa sólida que aumente la conversión.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="p-8 bg-[#f8fafc] rounded-2xl border border-slate-100 shadow-sm hover:border-[#2563eb] transition-all duration-500">
+          <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+            <div class="w-16 h-16 rounded-full bg-[#2563eb] flex items-center justify-center flex-shrink-0">
+              <span class="text-2xl font-black text-white">02</span>
+            </div>
+            <div>
+               <h3 class="text-xl font-bold text-[#0f172a] mb-2">Arquitectura de Interfaz</h3>
+               <p class="text-slate-500 leading-relaxed text-sm">Definimos el layout y la jerarquía visual basándonos en tu guía de estilo corporativa para una respuesta óptima a gran escala.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:border-[#2563eb] transition-all duration-500">
+          <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+            <div class="w-16 h-16 rounded-full bg-[#eff6ff] flex items-center justify-center flex-shrink-0">
+              <span class="text-2xl font-black text-[#2563eb]">03</span>
+            </div>
+            <div>
+               <h3 class="text-xl font-bold text-[#0f172a] mb-2">Desarrollo High-Speed</h3>
+               <p class="text-slate-500 leading-relaxed text-sm">Escribimos código limpio utilizando Astro o React, desplegando en CDNs globales para obtener tiempos de carga en milisegundos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PORTAFOLIO GRID (Refined Projects) -->
+  <section class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-6 fade-in-up" style="animation-delay: 0.1s;">
+      <div class="text-center mb-16">
+        <span class="text-[#2563eb] font-bold text-sm tracking-widest uppercase block mb-2">Portafolio Seleccionado</span>
+        <h2 class="text-4xl font-black text-[#0f172a]">Proyectos Realizados</h2>
+      </div>
+      
+      <!-- Controles de Filtro -->
+      <div class="flex flex-wrap justify-center gap-4 mb-20">
+        <button class="filter-btn active px-8 py-3 rounded-full text-sm font-bold transition-all bg-[#1e40af] text-white shadow-md hover:-translate-y-0.5 border border-[#1e40af]" data-filter="all">Todos</button>
+        <button class="filter-btn px-8 py-3 rounded-full text-sm font-bold transition-all bg-white text-slate-500 border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb] hover:-translate-y-0.5" data-filter="web-app">Web Apps</button>
+        <button class="filter-btn px-8 py-3 rounded-full text-sm font-bold transition-all bg-white text-slate-500 border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb] hover:-translate-y-0.5" data-filter="branding">Branding</button>
+      </div>
+
+      <!-- Grid de Proyectos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10" id="portfolio-grid">
+        <!-- PROYECTO 1 -->
+        <div class="project-item group" data-category="web-app branding">
+          <a href="https://guille37778.github.io/espacio-Guille/foreverone/index.html" target="_blank" rel="noopener noreferrer" class="block">
+            <div class="relative overflow-hidden rounded-3xl bg-[#f8fafc] aspect-[16/11] border border-slate-100 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200" alt="Forever One Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200'">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1e40af]/90 via-[#1e40af]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10 text-white">
+                <span class="inline-block bg-[#2563eb] text-white text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest mb-4 w-max shadow-md">Live Store</span>
+                <p class="text-[#bfdbfe] text-sm font-medium leading-relaxed max-w-sm">E-commerce de altísima velocidad y calidad gráfica. Enfoque premium en la presentación sin fricción.</p>
+              </div>
+            </div>
+            <div class="mt-6 flex justify-between items-start text-center md:text-left">
+              <div>
+                <h3 class="text-2xl font-bold text-[#0f172a] mb-1 group-hover:text-[#2563eb] transition-colors">Forever One</h3>
+                <span class="text-xs font-bold text-[#64748b] bg-slate-100 px-3 py-1 rounded-full uppercase tracking-wider inline-block">Web App & Branding</span>
+              </div>
+              <div class="hidden md:flex w-10 h-10 rounded-full bg-[#eff6ff] text-[#2563eb] items-center justify-center group-hover:bg-[#2563eb] group-hover:text-white transition-all">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- PROYECTO 2 -->
+        <div class="project-item group" data-category="web-app">
+          <a href="https://guille37778.github.io/espacio-Guille/Mparadigmas/index.html" target="_blank" rel="noopener noreferrer" class="block">
+            <div class="relative overflow-hidden rounded-3xl bg-[#f8fafc] aspect-[16/11] border border-slate-100 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+              <img src="/mparadigmas.jpg" alt="Mparadigmas App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200'">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1e40af]/90 via-[#1e40af]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10 text-white">
+                <span class="inline-block bg-[#2563eb] text-white text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest mb-4 w-max shadow-md">Architecture Web</span>
+                <p class="text-[#bfdbfe] text-sm font-medium leading-relaxed max-w-sm">Arquitectura corporativa orientada a flujos masivos de datos con la máxima escalabilidad y legibilidad.</p>
+              </div>
+            </div>
+            <div class="mt-6 flex justify-between items-start text-center md:text-left">
+              <div>
+                <h3 class="text-2xl font-bold text-[#0f172a] mb-1 group-hover:text-[#2563eb] transition-colors">Mparadigmas</h3>
+                <span class="text-xs font-bold text-[#64748b] bg-slate-100 px-3 py-1 rounded-full uppercase tracking-wider inline-block">Web System</span>
+              </div>
+              <div class="hidden md:flex w-10 h-10 rounded-full bg-[#eff6ff] text-[#2563eb] items-center justify-center group-hover:bg-[#2563eb] group-hover:text-white transition-all">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. FINAL CTA (Dark Tone) -->
+  <section class="w-full py-28 bg-[#0f172a] text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-8">
+        ¿Debería Tu Corporación<br/> <span class="text-[#3b82f6]">Estar En Este Grid?</span>
+      </h2>
+      <p class="text-slate-400 text-lg lg:text-xl font-medium mb-12 leading-relaxed max-w-2xl mx-auto">
+        Impulsamos proyectos reales que facturan y escalan. Da el primer paso hoy mismo e inicia el "Discovery".
+      </p>
+      <a href="/contacto" class="inline-flex items-center gap-6 bg-[#2563eb] text-white font-bold px-12 py-5 rounded-full hover:bg-[#1d4ed8] hover:scale-105 transition-all shadow-2xl border border-[#3b82f6]">
+        Consultar Arquitectura
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const btns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.project-item');
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => {
+          b.classList.remove('bg-[#1e40af]', 'text-white', 'shadow-md', 'border-[#1e40af]');
+          b.classList.add('bg-white', 'text-slate-500', 'border-slate-200');
+        });
+        
+        btn.classList.add('bg-[#1e40af]', 'text-white', 'shadow-md', 'border-[#1e40af]');
+        btn.classList.remove('bg-white', 'text-slate-500', 'border-slate-200');
+
+        const filterVal = btn.getAttribute('data-filter');
+
+        items.forEach(item => {
+          const cat = item.getAttribute('data-category') || '';
+          const htmlItem = item as HTMLElement;
+          
+          if (filterVal === 'all' || cat.includes(filterVal || '')) {
+            htmlItem.style.display = 'block';
+            setTimeout(() => { htmlItem.style.opacity = '1'; htmlItem.style.transform = 'scale(1)'; }, 10);
+          } else {
+            htmlItem.style.opacity = '0';
+            htmlItem.style.transform = 'scale(0.95)';
+            setTimeout(() => { htmlItem.style.display = 'none'; }, 300);
+          }
+        });
+      });
+    });
+  </script>
+
+</Layout>

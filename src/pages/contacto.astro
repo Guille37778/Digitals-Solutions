@@ -1,0 +1,216 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contacto | Digital Solutions">
+  
+  <!-- 1. HERO SECTION PREMIUM -->
+  <section class="relative bg-[#172554] text-white pt-32 pb-16 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[60vh]">
+    <!-- Wavy technical background -->
+    <div class="absolute top-0 right-0 w-2/3 h-full bg-[#1e40af] rounded-bl-full opacity-50 pointer-events-none transform translate-x-1/4"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none opacity-40"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 w-full fade-in-up">
+      <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        
+        <!-- Text (Left) -->
+        <div class="w-full lg:w-3/5 space-y-10 text-center lg:text-left">
+          <div class="inline-block bg-white/10 backdrop-blur-md border border-white/20 text-white px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-sm">
+            Protocolo de Respuesta 1h
+          </div>
+          
+          <h1 class="text-4xl sm:text-6xl lg:text-[7.5rem] font-black tracking-tighter leading-[0.9] lg:leading-[0.85]">
+            Agenda Tu<br />
+            <span class="text-[#93c5fd]">Consultoría<span class="text-white">.</span></span>
+          </h1>
+          
+          <p class="text-lg lg:text-xl text-[#bfdbfe] max-w-2xl leading-relaxed font-medium opacity-90 mx-auto lg:mx-0">
+            Agencias de alto rendimiento no deberían pelear con la tecnología. Hablemos sobre tu infraestructura y mejoremos ese factor de conversión hoy mismo.
+          </p>
+
+          <!-- Status Indicators -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-8 pt-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-white/5 border border-white/20 flex items-center justify-center">
+                <div class="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]"></div>
+              </div>
+              <span class="text-sm font-black uppercase tracking-widest text-[#bfdbfe]">Disponible Ahora</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-white/5 border border-white/20 flex items-center justify-center">
+                 <svg class="w-5 h-5 text-[#93c5fd]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <span class="text-sm font-black uppercase tracking-widest text-[#bfdbfe]">GMT-4 Standard</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abstract Visual Box (Right) -->
+        <div class="w-full lg:w-2/5 relative hidden lg:block">
+          <div class="aspect-square bg-gradient-to-br from-[#2563eb] to-[#1e40af] rounded-[3.5rem] -rotate-3 relative overflow-hidden shadow-2xl border border-white/10 group flex items-center justify-center">
+            <div class="absolute inset-0 bg-blue-600/10 group-hover:scale-110 transition-transform duration-700"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-20 group-hover:rotate-12 group-hover:scale-110 transition-all duration-700">
+              <!-- Chat/Message icon -->
+              <svg class="w-48 h-48 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+            
+            <!-- Floating badge -->
+            <div class="absolute top-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-white">
+              <div class="text-[10px] font-black uppercase tracking-widest text-[#93c5fd] mb-1">Tiempo de Respuesta</div>
+              <div class="flex items-end gap-2">
+                <span class="text-4xl font-black tracking-tighter">&lt; 60</span>
+                <span class="text-[#93c5fd] text-sm font-black pb-1">Minutos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. CONTACT GRID: FORM & CARDS -->
+  <section class="py-24 bg-white relative z-20 -mt-8 mx-4 lg:mx-0">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-white rounded-[3rem] shadow-[0_30px_100px_rgba(0,0,0,0.08)] overflow-hidden border border-slate-100 flex flex-col lg:flex-row">
+        
+        <!-- Left: Info & Immediate Shortcuts -->
+        <div class="lg:w-1/2 p-8 lg:p-20 bg-[#f8fafc] border-r border-slate-100 flex flex-col justify-between">
+          <div class="space-y-12">
+            <div>
+              <span class="text-[#2563eb] font-black text-xs tracking-[0.2em] uppercase block mb-4">Información Técnica</span>
+              <h2 class="text-4xl lg:text-5xl font-black text-[#0f172a] tracking-tighter leading-tight">
+                Canales de<br /> Comunicación<span class="text-[#2563eb]">.</span>
+              </h2>
+            </div>
+
+            <!-- Bento Contact Info Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="eng-hover bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition-all">
+                <div class="w-12 h-12 bg-[#eff6ff] text-[#2563eb] rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <h4 class="font-black text-xs uppercase tracking-widest text-[#0f172a] mb-2">Email Corporativo</h4>
+                <p class="text-slate-500 text-sm font-medium">info@digitalsolutions.com</p>
+              </div>
+
+              <div class="eng-hover bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition-all">
+                <div class="w-12 h-12 bg-[#eff6ff] text-[#2563eb] rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <h4 class="font-black text-xs uppercase tracking-widest text-[#0f172a] mb-2">Oficina Central</h4>
+                <p class="text-slate-500 text-sm font-medium">Valencia, VEN.</p>
+              </div>
+            </div>
+
+            <!-- Direct CTA Shortcuts -->
+            <div class="space-y-4">
+              <a href="https://wa.me/584124683230" target="_blank" class="eng-hover flex items-center justify-between p-6 bg-white rounded-2xl border border-slate-200 hover:border-[#25D366] transition-all group">
+                <div class="flex items-center gap-6">
+                  <div class="w-14 h-14 bg-[#25D366]/10 text-[#25D366] rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="font-black text-[#0f172a] text-lg mb-0.5 tracking-tight">Vía WhatsApp</h4>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black group-hover:text-[#25D366] transition-colors">Fast Response Track</p>
+                  </div>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-[#25D366] group-hover:text-white transition-all transform group-hover:translate-x-1">
+                   <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+              </a>
+
+              <a href="#" class="eng-hover flex items-center justify-between p-6 bg-white rounded-2xl border border-slate-200 hover:border-[#2563eb] transition-all group">
+                <div class="flex items-center gap-6">
+                  <div class="w-14 h-14 bg-[#2563eb]/10 text-[#2563eb] rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <div>
+                    <h4 class="font-black text-[#0f172a] text-lg mb-0.5 tracking-tight">Sesión Virtual</h4>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black group-hover:text-[#2563eb] transition-colors">Meeting Track 15min</p>
+                  </div>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-[#2563eb] group-hover:text-white transition-all transform group-hover:translate-x-1">
+                   <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Premium Form -->
+        <div class="lg:w-1/2 p-8 lg:p-20 bg-gradient-to-br from-[#0f172a] to-[#1e40af] text-white relative flex flex-col justify-center overflow-hidden group">
+            <!-- Glow background ambient inside form container -->
+            <div class="glow-on-hover absolute inset-0 opacity-20 pointer-events-none"></div>
+            <div class="absolute top-0 right-0 w-64 h-64 bg-[#3b82f6] rounded-full blur-[80px] opacity-20 pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#2563eb] rounded-full blur-[80px] opacity-20 pointer-events-none"></div>
+
+            <div class="relative z-10 space-y-10">
+              <div>
+                <h3 class="text-3xl lg:text-5xl font-black mb-4 leading-tight tracking-tighter">¿Listo para escalar?<br/> Hablemos ahora.</h3>
+                <p class="text-blue-200 text-sm font-medium opacity-80">Nuestro equipo técnico analizará tu infraestructura y responderá en menos de 60 minutos.</p>
+              </div>
+
+              <form class="space-y-4 relative z-10">
+                <div class="relative">
+                  <input type="text" placeholder="Nombre completo" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm">
+                </div>
+                
+                <div class="relative">
+                  <input type="email" placeholder="Correo corporativo" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm">
+                </div>
+                
+                <div class="relative">
+                  <textarea placeholder="Cuéntanos sobre tu proyecto..." rows="4" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 resize-none focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm"></textarea>
+                </div>
+                
+                <button type="button" class="w-full py-5 mt-4 text-white font-black tracking-[0.2em] uppercase rounded-2xl bg-[#2563eb] hover:bg-blue-500 shadow-[0_20px_50px_rgba(37,99,235,0.4)] transition-all duration-300 border border-white/10 flex justify-center items-center gap-3 group/btn">
+                  Enviar Mensaje
+                  <svg class="w-6 h-6 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+              </form>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ANIMATED TRUST MARQUEE -->
+  <section class="py-12 bg-[#f8fafc] border-b border-slate-100 overflow-hidden relative">
+    <div class="flex marquee-container gap-20 opacity-20 grayscale select-none">
+       <!-- First track -->
+       <div class="flex items-center gap-20 whitespace-nowrap marquee-track">
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">PURE ENGINEERING</span>
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">DIGITAL SOLUTIONS</span>
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">HIGH PERFORMANCE</span>
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">SCALABLE SYSTEMS</span>
+       </div>
+       <!-- Duplicate track -->
+       <div class="flex items-center gap-20 whitespace-nowrap marquee-track" aria-hidden="true">
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">PURE ENGINEERING</span>
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">DIGITAL SOLUTIONS</span>
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">HIGH PERFORMANCE</span>
+          <span class="text-[#0f172a] font-black text-3xl tracking-tighter italic">SCALABLE SYSTEMS</span>
+       </div>
+    </div>
+  </section>
+
+  <style>
+    .marquee-container {
+      display: flex;
+      width: max-content;
+    }
+    .marquee-track {
+      animation: marquee 30s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+
+</Layout>

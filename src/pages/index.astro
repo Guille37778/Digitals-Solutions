@@ -1,0 +1,443 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Digital Solutions | Ingeniería Web & UI/UX">
+  
+  <!-- 1. HERO SECTION -->
+  <section class="relative bg-[#1d4ed8] text-white pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <!-- Abstract wavy elements -->
+    <div class="absolute top-0 right-0 w-2/3 h-full bg-[#2563eb] rounded-bl-full opacity-50 pointer-events-none transform translate-x-1/4"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <!-- Text Content -->
+        <div class="w-full lg:w-1/2 space-y-8">
+          <div class="inline-block bg-[#3b82f6] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">
+            Agencia de Ingeniería Web
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-extrabold leading-tight tracking-tight">
+            Elevando marcas<br/>
+            <span class="whitespace-nowrap">a un nivel superior.</span>
+          </h1>
+          <p class="text-[#eff6ff] text-lg max-w-md leading-relaxed font-medium">
+            Desarrollamos interfaces web de velocidad extrema y arquitecturas modulares (Astro & React) para empresas que exigen un rendimiento corporativo perfecto.
+          </p>
+          
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="/contacto" class="bg-white text-[#1d4ed8] hover:bg-[#eff6ff] px-8 py-4 rounded-full font-bold shadow-lg transition-transform hover:-translate-y-1 flex items-center gap-2">
+              Iniciar Proyecto 
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <a href="/portafolio" class="px-8 py-4 rounded-full font-bold text-white hover:bg-white/10 transition-colors flex items-center gap-2">
+              <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+              </div>
+              Ver Casos de Éxito
+            </a>
+          </div>
+        </div>
+
+        <!-- Image/Visuals -->
+        <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-md">
+            <!-- Imagen de Desarrollo / Negocios -->
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800" alt="Ingeniería Web Corporativa" class="w-full aspect-square object-cover rounded-[2.5rem] shadow-2xl relative z-20 border-8 border-[#3b82f6]/30">
+            
+            <!-- Floating Elements -->
+            <div class="absolute -top-6 -left-2 sm:-left-6 bg-white p-4 rounded-2xl shadow-xl z-30 flex items-center gap-3 animate-float text-[#0f172a]">
+              <div class="w-10 h-10 bg-[#eff6ff] rounded-full flex items-center justify-center text-[#2563eb]">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <div>
+                <p class="font-bold text-sm">Alta Disponibilidad</p>
+                <p class="text-xs text-slate-500">Uptime 99.9%</p>
+              </div>
+            </div>
+
+            <div class="absolute -bottom-6 -right-2 sm:-right-6 bg-white p-4 rounded-2xl shadow-xl z-30 flex items-center gap-3 animate-float" style="animation-delay: 1s;">
+              <div>
+                <p class="font-bold text-sm text-[#0f172a] mb-1">Rendimiento Vitals</p>
+                <!-- Mini chart mock -->
+                <div class="flex items-end gap-1.5 h-8 mt-1">
+                  <div class="w-2 bg-[#93c5fd] h-4 rounded-sm"></div>
+                  <div class="w-2 bg-[#60a5fa] h-6 rounded-sm"></div>
+                  <div class="w-2 bg-[#3b82f6] h-7 rounded-sm"></div>
+                  <div class="w-2 bg-[#2563eb] h-10 rounded-sm"></div>
+                  <span class="text-xs font-black text-[#2563eb] ml-1">100</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Cards Overlapping -->
+  <section class="relative z-20 -mt-10 max-w-7xl mx-auto px-6 hidden md:block">
+    <div class="grid grid-cols-3 bg-[#1e40af] rounded-3xl shadow-2xl overflow-hidden divide-x divide-[#3b82f6]/30 border border-[#3b82f6]/30">
+      
+      <div class="p-8 flex items-center gap-4 group hover:bg-[#1d4ed8] transition-colors cursor-default">
+         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white shrink-0 group-hover:scale-110 group-hover:bg-white transition-all group-hover:text-[#1d4ed8]">
+           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+         </div>
+         <div>
+           <h3 class="font-bold text-white text-lg">Código Optimizado</h3>
+           <p class="text-xs text-[#93c5fd] mt-1">Desarrollo estático super rápido con Astro y Tailwind.</p>
+         </div>
+      </div>
+
+      <div class="p-8 flex items-center gap-4 group hover:bg-[#1d4ed8] transition-colors cursor-default">
+         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white shrink-0 group-hover:scale-110 group-hover:bg-white transition-all group-hover:text-[#1d4ed8]">
+           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+         </div>
+         <div>
+           <h3 class="font-bold text-white text-lg">Calidad Lighthouse</h3>
+           <p class="text-xs text-[#93c5fd] mt-1">Cumplimos los más estrictos estándares Core Web Vitals.</p>
+         </div>
+      </div>
+
+      <div class="p-8 flex items-center gap-4 group hover:bg-[#1d4ed8] transition-colors cursor-default">
+         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white shrink-0 group-hover:scale-110 group-hover:bg-white transition-all group-hover:text-[#1d4ed8]">
+           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+         </div>
+         <div>
+           <h3 class="font-bold text-white text-lg">Diseño Pixel-Perfect</h3>
+           <p class="text-xs text-[#93c5fd] mt-1">Interfaces impecables que transmiten prestigio empresarial.</p>
+         </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. ABOUT US SECTION -->
+  <section class="py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        
+        <div class="w-full lg:w-1/2 relative">
+          <!-- Rounded Card background wrapper -->
+          <div class="bg-[#eff6ff] rounded-r-full rounded-bl-[5rem] p-8 md:p-12 relative w-[90%] md:w-[80%] border border-[#bfdbfe]">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800" alt="Nuestro Equipo" class="w-full h-auto rounded-[2rem] shadow-xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700">
+            <!-- Floating tag on image -->
+            <div class="absolute -top-6 right-0 bg-[#0f172a] text-white py-3 px-6 rounded-2xl font-bold text-lg shadow-2xl z-20 border border-slate-700">
+              Despliegue <span class="block text-xs font-normal text-slate-400">Ultra Rápido</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 space-y-8">
+          <div>
+            <span class="text-[#2563eb] font-bold text-sm tracking-widest uppercase mb-3 block">Sobre Digital Solutions</span>
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-[#0f172a] leading-tight">
+              Diseño Preciso, <br/> Escalabilidad Total
+            </h2>
+          </div>
+          <p class="text-slate-500 leading-relaxed max-w-lg">
+            Aportamos soluciones de desarrollo web corporativo enfocadas en la retención del usuario. Nos deshacemos de CMS pesados y construimos sitios estáticos que no solo superan visualmente a la competencia, sino que cargan en fracciones de segundo.
+          </p>
+          
+          <div class="flex gap-10 py-4 border-y border-slate-100 my-4">
+            <div class="flex items-center gap-4 py-4">
+               <div class="w-14 h-14 rounded-2xl bg-[#eff6ff] text-[#2563eb] flex items-center justify-center border border-[#bfdbfe]">
+                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+               </div>
+               <div>
+                 <p class="font-black text-3xl text-[#0f172a] mb-1">0.4<span class="text-[#2563eb] text-xl">s</span></p>
+                 <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Carga Promedio</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-4 py-4">
+               <div class="w-14 h-14 rounded-2xl bg-[#eff6ff] text-[#2563eb] flex items-center justify-center border border-[#bfdbfe]">
+                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+               </div>
+               <div>
+                 <p class="font-black text-3xl text-[#0f172a] mb-1">99<span class="text-[#2563eb] text-xl">%</span></p>
+                 <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Score Lighthouse</p>
+               </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-8 pt-4">
+            <a href="/portafolio" class="bg-[#2563eb] text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-[#1d4ed8] hover:shadow-xl hover:-translate-y-1 transition-all">
+              Ver Servicios
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES GRID -->
+  <section class="py-24 bg-[#f8fafc] border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center mb-16">
+        <span class="text-[#2563eb] font-bold text-sm tracking-widest uppercase block mb-3">Nuestros Pilares</span>
+        <h2 class="text-4xl lg:text-5xl font-extrabold text-[#0f172a] leading-tight max-w-2xl mx-auto">
+          Arquitectura Web <br/> de Máxima Precisión
+        </h2>
+      </div>
+
+      <!-- 4 Custom Blue Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1 Dark Blue -->
+        <div class="bg-[#0f172a] text-white rounded-[2rem] p-8 hover:-translate-y-2 transition-transform shadow-xl group border border-slate-700">
+          <div class="inline-block bg-[#1e293b] border border-slate-600 px-4 py-1.5 rounded-full mb-6 text-white font-semibold text-xs group-hover:bg-[#2563eb] transition-colors">
+            Frontend
+          </div>
+          <h3 class="text-xl font-bold mb-4">Desarrollo Web</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">Plataformas ultra rápidas creadas con Astro Js y React. Decimos adiós a WordPress para darle la bienvenida al rendimiento puro.</p>
+          <a href="/servicios/web-corporativa" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+            Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+        <!-- Card 2 Primary Blue -->
+        <div class="bg-[#2563eb] text-white rounded-[2rem] p-8 hover:-translate-y-2 transition-transform shadow-xl group border border-[#3b82f6]">
+          <div class="inline-block bg-[#1d4ed8] border border-[#3b82f6] px-4 py-1.5 rounded-full mb-6 text-white font-semibold text-xs">
+            Visuales
+          </div>
+          <h3 class="text-xl font-bold mb-4">Sistemas de Diseño</h3>
+          <p class="text-[#bfdbfe] text-sm leading-relaxed mb-6">Aplicamos interfaces corporativas (UI/UX) bajo patrones psicológicos de usuario para aumentar drásticamente el CTR (Click Through Rate).</p>
+          <a href="/servicios/branding" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+            Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+        <!-- Card 3 Primary Blue -->
+        <div class="bg-[#2563eb] text-white rounded-[2rem] p-8 hover:-translate-y-2 transition-transform shadow-xl group border border-[#3b82f6]">
+           <div class="inline-block bg-[#1d4ed8] border border-[#3b82f6] px-4 py-1.5 rounded-full mb-6 text-white font-semibold text-xs">
+            E-commerce
+          </div>
+          <h3 class="text-xl font-bold mb-4">Arquitectura de Ventas</h3>
+          <p class="text-[#bfdbfe] text-sm leading-relaxed mb-6">Digitalizamos tu catálogo integrando gestores dinámicos como Google Sheets o Headless CMS garantizando facilidad operativa administrativa.</p>
+          <a href="/servicios/ecommerce-pyme" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+            Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+        <!-- Card 4 Primary Blue -->
+        <div class="bg-[#2563eb] text-white rounded-[2rem] p-8 hover:-translate-y-2 transition-transform shadow-xl group border border-[#3b82f6]">
+           <div class="inline-block bg-[#1d4ed8] border border-[#3b82f6] px-4 py-1.5 rounded-full mb-6 text-white font-semibold text-xs">
+            Optimización
+          </div>
+          <h3 class="text-xl font-bold mb-4">SEO Fundacional</h3>
+          <p class="text-[#bfdbfe] text-sm leading-relaxed mb-6">Tu código base sale preparado con las etiquetas semánticas, metadatos y velocidad requeridas por los robots de Google.</p>
+          <a href="/servicios/web-corporativa" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+            Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. NUMBERED PROCESS -->
+  <section class="py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+      
+      <!-- Imagenes Collage -->
+      <div class="w-full lg:w-1/2 relative space-y-4">
+        <!-- Main big image -->
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" alt="Consulting" class="w-4/5 ml-auto rounded-[2.5rem] shadow-2xl border-4 border-slate-50">
+        <!-- Floating secondary image -->
+        <div class="absolute bottom-[15%] left-0 w-[60%] bg-white p-2.5 rounded-[2rem] shadow-2xl border border-slate-100">
+           <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" alt="Discussion" class="w-full rounded-[1.5rem]">
+        </div>
+        <!-- Tag -->
+        <div class="absolute top-[20%] -right-4 bg-[#0f172a] px-6 py-4 rounded-2xl shadow-xl font-bold text-white flex items-center gap-3 border border-slate-700">
+          <span class="text-[#3b82f6] flex items-center"><svg class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Garantía</span> de Calidad
+        </div>
+      </div>
+
+      <!-- Text Process -->
+      <div class="w-full lg:w-1/2">
+        <span class="text-[#2563eb] font-bold text-sm tracking-widest uppercase block mb-3">La Metodología Digital Solutions</span>
+        <h2 class="text-4xl lg:text-5xl font-extrabold text-[#0f172a] leading-tight mb-8">
+          Métrica, Ejecución <br/> Y Resultados
+        </h2>
+        <p class="text-slate-500 mb-10 leading-relaxed max-w-lg">
+          No lanzamos proyectos al azar. Llevamos una metodología estructurada que garantiza que el producto final superará los estándares técnicos del mercado.
+        </p>
+        
+        <div class="space-y-8">
+          <div class="flex gap-6 items-start">
+            <h3 class="text-5xl font-black text-[#eff6ff] text-stroke text-stroke-[#2563eb] mt-1">01</h3>
+            <div>
+               <h4 class="text-xl font-bold text-[#0f172a] mb-2">Auditoría y Wireframing</h4>
+               <p class="text-sm text-slate-500 leading-relaxed">Mapemos tu contenido, establecemos la estructura UI (modelo en grises) y definimos qué páginas tendrán impacto directo en el embudo de conversión.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-6 items-start">
+            <h3 class="text-5xl font-black text-[#eff6ff] text-stroke text-stroke-[#2563eb] mt-1">02</h3>
+            <div>
+               <h4 class="text-xl font-bold text-[#0f172a] mb-2">Desarrollo Cero Latencia</h4>
+               <p class="text-sm text-slate-500 leading-relaxed">Implementamos Astro. Evitamos consultar bases de datos en runtime; pre-renderizamos todo el HTML. Resultado: carga en menos de 0.5s en móvil.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6 items-start">
+            <h3 class="text-5xl font-black text-[#eff6ff] text-stroke text-stroke-[#2563eb] mt-1">03</h3>
+            <div>
+               <h4 class="text-xl font-bold text-[#0f172a] mb-2">Despliegue y Mantenimiento</h4>
+               <p class="text-sm text-slate-500 leading-relaxed">Publicación en redes CDN globales (Vercel/Netlify) y soporte opcional para incorporar características a medida que tu negocio escala.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- 9. STATS BANNER -->
+  <section id="stats-section" class="bg-[#1e40af] py-20 relative overflow-hidden">
+    <!-- Abstract right element -->
+    <div class="absolute -right-20 top-0 w-96 h-96 bg-[#2563eb] rounded-full mix-blend-multiply opacity-50 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-white text-center relative z-10">
+      <div>
+        <h3 class="text-5xl lg:text-6xl font-black mb-3"><span class="counter" data-target="250">0</span>K+</h3>
+        <p class="text-sm text-[#93c5fd] uppercase tracking-widest font-bold">Líneas Escritas</p>
+      </div>
+      <div>
+        <h3 class="text-5xl lg:text-6xl font-black mb-3"><span class="counter" data-target="15">0</span>+</h3>
+        <p class="text-sm text-[#93c5fd] uppercase tracking-widest font-bold">Apps Publicadas</p>
+      </div>
+      <div>
+        <h3 class="text-5xl lg:text-6xl font-black mb-3"><span class="counter" data-target="0.4" data-float="true">0</span>s</h3>
+        <p class="text-sm text-[#93c5fd] uppercase tracking-widest font-bold">Carga Global</p>
+      </div>
+      <div>
+        <h3 class="text-5xl lg:text-6xl font-black mb-3"><span class="counter" data-target="99">0</span>%</h3>
+        <p class="text-sm text-[#93c5fd] uppercase tracking-widest font-bold">Core Web Vitals</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ AND FORM SECTION -->
+  <section class="py-24 bg-[#f8fafc] border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-[#2563eb] font-bold text-sm tracking-widest uppercase block mb-3">Respuestas Claras</span>
+          <h2 class="text-4xl lg:text-5xl font-extrabold text-[#0f172a] leading-tight mb-8">Preguntas Frecuentes</h2>
+          <p class="text-slate-500 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">Resolvemos las dudas más comunes sobre nuestra metodología, tecnologías de desarrollo y tiempos de entrega.</p>
+        </div>
+        
+        <!-- Accordion Items -->
+        <div class="space-y-4">
+          <!-- Item 1 -->
+          <details class="group border border-slate-200 bg-white rounded-2xl p-8 hover:border-[#bfdbfe] hover:shadow-lg transition-all open:bg-[#eff6ff] open:border-[#bfdbfe]" open>
+            <summary class="flex justify-between items-center font-bold text-[#0f172a] text-lg lg:text-xl cursor-pointer list-none [&::-webkit-details-marker]:hidden outline-none group-open:text-[#2563eb]">
+              ¿Qué framework de desarrollo utilizan? 
+              <svg class="w-6 h-6 text-[#2563eb] transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <p class="text-slate-600 text-sm lg:text-base mt-4 leading-relaxed font-medium animate-fade-in-up">
+              Actualmente desarrollamos nuestras plataformas sobre Astro y React. Esta combinación permite despachar cero JavaScript innecesario al cliente (Islas), resultando en sitios estáticos imposibles de hackear y extraordinariamente rápidos.
+            </p>
+          </details>
+          
+          <!-- Item 2 -->
+          <details class="group border border-slate-200 bg-white rounded-2xl p-8 hover:border-[#bfdbfe] hover:shadow-lg transition-all open:bg-[#eff6ff] open:border-[#bfdbfe]">
+            <summary class="flex justify-between items-center font-bold text-[#0f172a] text-lg lg:text-xl cursor-pointer list-none [&::-webkit-details-marker]:hidden outline-none group-open:text-[#2563eb]">
+              ¿Puedo autogestionar el contenido como un catálogo?
+              <svg class="w-6 h-6 text-[#2563eb] transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <p class="text-slate-600 text-sm lg:text-base mt-4 leading-relaxed font-medium">
+              Sí. Integramos paneles de control minimalistas o conectamos tu catálogo directamente con bases como Google Sheets. Así puedes agregar productos o servicios sin necesidad de saber programar ni lidiar con complejos CMS.
+            </p>
+          </details>
+
+          <!-- Item 3 -->
+          <details class="group border border-slate-200 bg-white rounded-2xl p-8 hover:border-[#bfdbfe] hover:shadow-lg transition-all open:bg-[#eff6ff] open:border-[#bfdbfe]">
+            <summary class="flex justify-between items-center font-bold text-[#0f172a] text-lg lg:text-xl cursor-pointer list-none [&::-webkit-details-marker]:hidden outline-none group-open:text-[#2563eb]">
+              ¿Cuánto tiempo tardan en entregar un proyecto?
+              <svg class="w-6 h-6 text-[#2563eb] transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <p class="text-slate-600 text-sm lg:text-base mt-4 leading-relaxed font-medium">
+              Dependiendo de la complejidad. Una Landing Page corporativa de alto impacto suele tardar de 1 a 2 semanas, mientras que plataformas complejas con catálogo o cotizador integrado pueden tomar entre 3 y 5 semanas siguiendo nuestra metodología ágil.
+            </p>
+          </details>
+
+          <!-- Item 4 -->
+          <details class="group border border-slate-200 bg-white rounded-2xl p-8 hover:border-[#bfdbfe] hover:shadow-lg transition-all open:bg-[#eff6ff] open:border-[#bfdbfe]">
+            <summary class="flex justify-between items-center font-bold text-[#0f172a] text-lg lg:text-xl cursor-pointer list-none [&::-webkit-details-marker]:hidden outline-none group-open:text-[#2563eb]">
+              ¿Incluyen configuración de dominio y servidor?
+              <svg class="w-6 h-6 text-[#2563eb] transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+             <p class="text-slate-600 text-sm lg:text-base mt-4 leading-relaxed font-medium">
+              ¡Totalmente! Nos encargamos del despliegue en infraestructuras globales (Edge Computing / CDN) y configuramos tus DNS para que no tengas que preocuparte por ningún aspecto técnico del lanzamiento.
+            </p>
+          </details>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ANIMACIÓN DE NÚMEROS (CONTADORES) -->
+  <script>
+    const initCounters = () => {
+      const counters = document.querySelectorAll('.counter');
+      const section = document.getElementById('stats-section');
+      
+      if(!section || counters.length === 0) return;
+      
+      // Asegurarse de que partan en 0 siempre que la página carga
+      counters.forEach(c => c.innerText = "0");
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          counters.forEach(counter => {
+            const updateCount = () => {
+              const target = +counter.getAttribute('data-target');
+              const isFloat = counter.hasAttribute('data-float');
+              const count = parseFloat(counter.innerText || "0");
+              
+              const inc = target / 40; // velocidad (40 iteraciones aproximadas)
+
+              if (count < target) {
+                 counter.innerText = isFloat ? (count + inc).toFixed(1) : Math.ceil(count + inc).toString();
+                 setTimeout(updateCount, 30); // 30ms delay entre cada número
+              } else {
+                 counter.innerText = isFloat ? target.toFixed(1) : target.toString();
+              }
+            };
+            updateCount();
+          });
+          // Dejar de observar una vez la animación suceda
+          observer.disconnect();
+        }
+      }, { threshold: 0.5 }); // Empezar cuando el usuario está a la mitad de la sección
+
+      observer.observe(section);
+    };
+
+    // Ejecutar inmediatamente
+    initCounters();
+    
+    // Soporte para Astro View Transitions si están activas
+    document.addEventListener('astro:after-swap', initCounters);
+  </script>
+
+</Layout>
+
+<style>
+/* Utility if tailwind text-stroke plugin isn't installed */
+.text-stroke {
+  -webkit-text-stroke-width: 1px;
+}
+.text-stroke-\[\#2563eb\] {
+  -webkit-text-stroke-color: #2563eb;
+  color: transparent;
+}
+</style>
