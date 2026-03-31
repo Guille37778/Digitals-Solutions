@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Digital Solutions | Ingeniería Web & UI/UX">
@@ -25,11 +26,11 @@ import Layout from '../layouts/Layout.astro';
           </p>
           
           <div class="flex flex-wrap items-center gap-4 pt-4">
-            <a href="/contacto" class="bg-white text-[#1d4ed8] hover:bg-[#eff6ff] px-8 py-4 rounded-full font-bold shadow-lg transition-transform hover:-translate-y-1 flex items-center gap-2">
+            <a href={`${base}contacto`} class="bg-white text-[#1d4ed8] hover:bg-[#eff6ff] px-8 py-4 rounded-full font-bold shadow-lg transition-transform hover:-translate-y-1 flex items-center gap-2">
               Iniciar Proyecto 
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="/portafolio" class="px-8 py-4 rounded-full font-bold text-white hover:bg-white/10 transition-colors flex items-center gap-2">
+            <a href={`${base}portafolio`} class="px-8 py-4 rounded-full font-bold text-white hover:bg-white/10 transition-colors flex items-center gap-2">
               <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
               </div>
@@ -160,7 +161,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
 
           <div class="flex items-center gap-8 pt-4">
-            <a href="/portafolio" class="bg-[#2563eb] text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-[#1d4ed8] hover:shadow-xl hover:-translate-y-1 transition-all">
+            <a href={`${base}portafolio`} class="bg-[#2563eb] text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-[#1d4ed8] hover:shadow-xl hover:-translate-y-1 transition-all">
               Ver Servicios
             </a>
           </div>
@@ -191,7 +192,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-xl font-bold mb-4">Desarrollo Web</h3>
           <p class="text-slate-400 text-sm leading-relaxed mb-6">Plataformas ultra rápidas creadas con Astro Js y React. Decimos adiós a WordPress para darle la bienvenida al rendimiento puro.</p>
-          <a href="/servicios/web-corporativa" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+          <a href={`${base}servicios/web-corporativa`} class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
             Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </a>
         </div>
@@ -203,7 +204,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-xl font-bold mb-4">Sistemas de Diseño</h3>
           <p class="text-[#bfdbfe] text-sm leading-relaxed mb-6">Aplicamos interfaces corporativas (UI/UX) bajo patrones psicológicos de usuario para aumentar drásticamente el CTR (Click Through Rate).</p>
-          <a href="/servicios/branding" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+          <a href={`${base}servicios/branding`} class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
             Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </a>
         </div>
@@ -215,7 +216,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-xl font-bold mb-4">Arquitectura de Ventas</h3>
           <p class="text-[#bfdbfe] text-sm leading-relaxed mb-6">Digitalizamos tu catálogo integrando gestores dinámicos como Google Sheets o Headless CMS garantizando facilidad operativa administrativa.</p>
-          <a href="/servicios/ecommerce-pyme" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+          <a href={`${base}servicios/ecommerce-pyme`} class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
             Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </a>
         </div>
@@ -227,7 +228,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-xl font-bold mb-4">SEO Fundacional</h3>
           <p class="text-[#bfdbfe] text-sm leading-relaxed mb-6">Tu código base sale preparado con las etiquetas semánticas, metadatos y velocidad requeridas por los robots de Google.</p>
-          <a href="/servicios/web-corporativa" class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
+          <a href={`${base}servicios/web-corporativa`} class="text-sm font-bold text-[#eff6ff] flex items-center gap-2 group-hover:text-white">
             Explorar <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </a>
         </div>

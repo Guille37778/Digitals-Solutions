@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 ---
 <footer class="bg-[#1e40af] text-white pt-20 pb-8 mt-auto border-t border-[rgba(255,255,255,0.1)]">
   <div class="max-w-7xl mx-auto px-6">
@@ -62,10 +63,10 @@
       <div class="space-y-6">
         <h4 class="font-bold text-lg underline decoration-[#3b82f6] decoration-2 underline-offset-8">Enlaces Rápidos</h4>
         <ul class="space-y-3">
-          <li><a href="/" class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Inicio</a></li>
-          <li><a href="/portafolio" class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Portafolio</a></li>
-          <li><a href="/precios" class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Planes y Precios</a></li>
-          <li><a href="/contacto" class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Contacto Directo</a></li>
+          <li><a href={base} class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Inicio</a></li>
+          <li><a href={`${base}portafolio`} class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Portafolio</a></li>
+          <li><a href={`${base}precios`} class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Planes y Precios</a></li>
+          <li><a href={`${base}contacto`} class="text-sm text-[#93c5fd] hover:text-white transition-colors flex items-center gap-2"> Contacto Directo</a></li>
         </ul>
       </div>
 
@@ -73,11 +74,11 @@
       <div class="space-y-6">
         <h4 class="font-bold text-lg underline decoration-[#3b82f6] decoration-2 underline-offset-8">Soluciones Digitales</h4>
         <ul class="space-y-3">
-          <li><a href="/servicios/branding" class="text-sm text-[#93c5fd] hover:text-white transition-colors">Diseño de Branding</a></li>
-          <li><a href="/servicios/landing-page" class="text-sm text-[#93c5fd] hover:text-white transition-colors">Landing Page</a></li>
-          <li><a href="/servicios/web-corporativa" class="text-sm text-[#93c5fd] hover:text-white transition-colors">Web Corporativa</a></li>
-          <li><a href="/servicios/ecommerce-pyme" class="text-sm text-[#93c5fd] hover:text-white transition-colors">E-commerce Pyme</a></li>
-          <li><a href="/servicios/ecommerce-empresa" class="text-sm text-[#93c5fd] hover:text-white transition-colors">E-commerce Empresa</a></li>
+          <li><a href={`${base}servicios/branding`} class="text-sm text-[#93c5fd] hover:text-white transition-colors">Diseño de Branding</a></li>
+          <li><a href={`${base}servicios/landing-page`} class="text-sm text-[#93c5fd] hover:text-white transition-colors">Landing Page</a></li>
+          <li><a href={`${base}servicios/web-corporativa`} class="text-sm text-[#93c5fd] hover:text-white transition-colors">Web Corporativa</a></li>
+          <li><a href={`${base}servicios/ecommerce-pyme`} class="text-sm text-[#93c5fd] hover:text-white transition-colors">E-commerce Pyme</a></li>
+          <li><a href={`${base}servicios/ecommerce-empresa`} class="text-sm text-[#93c5fd] hover:text-white transition-colors">E-commerce Empresa</a></li>
         </ul>
       </div>
 

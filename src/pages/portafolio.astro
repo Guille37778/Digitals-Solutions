@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Portafolio | Digital Solutions">
@@ -28,8 +29,8 @@ import Layout from '../layouts/Layout.astro';
           </p>
 
           <div class="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start">
-            <a href="/contacto" class="bg-white text-[#1d4ed8] px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-blue-50 transition-all shadow-xl">Iniciar Proyecto</a>
-            <a href="/precios" class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-all">Ver Planes</a>
+            <a href={`${base}contacto`} class="bg-white text-[#1d4ed8] px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-blue-50 transition-all shadow-xl">Iniciar Proyecto</a>
+            <a href={`${base}precios`} class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-all">Ver Planes</a>
           </div>
         </div>
 
@@ -233,7 +234,7 @@ import Layout from '../layouts/Layout.astro';
       <p class="text-slate-400 text-lg lg:text-xl font-medium mb-12 leading-relaxed max-w-2xl mx-auto">
         Impulsamos proyectos reales que facturan y escalan. Da el primer paso hoy mismo e inicia el "Discovery".
       </p>
-      <a href="/contacto" class="inline-flex items-center gap-6 bg-[#2563eb] text-white font-bold px-12 py-5 rounded-full hover:bg-[#1d4ed8] hover:scale-105 transition-all shadow-2xl border border-[#3b82f6]">
+      <a href={`${base}contacto`} class="inline-flex items-center gap-6 bg-[#2563eb] text-white font-bold px-12 py-5 rounded-full hover:bg-[#1d4ed8] hover:scale-105 transition-all shadow-2xl border border-[#3b82f6]">
         Consultar Arquitectura
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
       </a>
