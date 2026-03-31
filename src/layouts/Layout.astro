@@ -20,6 +20,22 @@ const { title, description = "Digital Solutions - Ingeniería Web de Alto Impact
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
+
+		<!-- Google Analytics GA4 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2C39300834" is:inline></script>
+		<script is:inline>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-2C39300834');
+
+		  // Rastrear cada navegación con Astro View Transitions
+		  document.addEventListener('astro:page-load', () => {
+		    gtag('config', 'G-2C39300834', {
+		      page_path: window.location.pathname
+		    });
+		  });
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href={`${base}logo.svg`} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
