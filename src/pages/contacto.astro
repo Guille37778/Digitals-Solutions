@@ -155,20 +155,23 @@ const base = import.meta.env.BASE_URL;
                 <p class="text-blue-200 text-sm font-medium opacity-80">Nuestro equipo técnico analizará tu infraestructura y responderá en menos de 60 minutos.</p>
               </div>
 
-              <form class="space-y-4 relative z-10">
+              <form action="https://formspree.io/f/xykbjrkb" method="POST" class="space-y-4 relative z-10">
+                <!-- Campo oculto para el asunto del email -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde Digital Solutions" />
+
                 <div class="relative">
-                  <input type="text" placeholder="Nombre completo" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm">
+                  <input type="text" name="nombre" required placeholder="Nombre completo" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm">
                 </div>
                 
                 <div class="relative">
-                  <input type="email" placeholder="Correo corporativo" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm">
+                  <input type="email" name="email" required placeholder="Correo corporativo" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm">
                 </div>
                 
                 <div class="relative">
-                  <textarea placeholder="Cuéntanos sobre tu proyecto..." rows="4" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 resize-none focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm"></textarea>
+                  <textarea name="mensaje" required placeholder="Cuéntanos sobre tu proyecto..." rows="4" class="w-full p-5 rounded-2xl bg-white/5 border border-white/10 text-white font-medium placeholder-blue-300/40 resize-none focus:outline-none focus:bg-white/10 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all backdrop-blur-sm"></textarea>
                 </div>
                 
-                <button type="button" class="w-full py-5 mt-4 text-white font-black tracking-[0.2em] uppercase rounded-2xl bg-[#2563eb] hover:bg-blue-500 shadow-[0_20px_50px_rgba(37,99,235,0.4)] transition-all duration-300 border border-white/10 flex justify-center items-center gap-3 group/btn">
+                <button type="submit" class="w-full py-5 mt-4 text-white font-black tracking-[0.2em] uppercase rounded-2xl bg-[#2563eb] hover:bg-blue-500 shadow-[0_20px_50px_rgba(37,99,235,0.4)] transition-all duration-300 border border-white/10 flex justify-center items-center gap-3 group/btn">
                   Enviar Mensaje
                   <svg class="w-6 h-6 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </button>
