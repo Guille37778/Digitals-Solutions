@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Guille37778.github.io/Digitals-Solutions/sitemap-index.xml

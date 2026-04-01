@@ -20,6 +20,8 @@ const { title, description = "Digital Solutions - Ingeniería Web de Alto Impact
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
+		<link rel="canonical" href={Astro.url} />
+		<meta name="robots" content="index, follow" />
 
 		<!-- Google Analytics GA4 -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2C39300834" is:inline></script>
@@ -69,12 +71,52 @@ const { title, description = "Digital Solutions - Ingeniería Web de Alto Impact
 			  "name": "Digital Solutions",
 			  "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
 			  "description": "Agencia de Ingeniería Web de Alto Impacto y Diseño Premium utilizando Astro, React y tecnologías modernas.",
+			  "@id": "https://Guille37778.github.io/Digitals-Solutions/",
+			  "url": "https://Guille37778.github.io/Digitals-Solutions/",
+			  "telephone": "+584120000000",
+			  "priceRange": "$$$",
 			  "address": {
 				"@type": "PostalAddress",
 				"addressLocality": "Valencia",
+				"addressRegion": "Carabobo",
 				"addressCountry": "VE"
 			  },
-			  "url": "https://digitalsolutions.com"
+			  "openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+				  "Monday",
+				  "Tuesday",
+				  "Wednesday",
+				  "Thursday",
+				  "Friday"
+				],
+				"opens": "09:00",
+				"closes": "18:00"
+			  },
+			  "sameAs": [
+				"https://www.instagram.com/digitalsolutions",
+				"https://www.linkedin.com/company/digitalsolutions"
+			  ]
+			}
+		</script>
+
+		{/* Breadcrumbs JSON-LD */}
+		<script type="application/ld+json" is:inline define:vars={{ url: Astro.url.toString(), title }}>
+			{
+			  "@context": "https://schema.org",
+			  "@type": "BreadcrumbList",
+			  "itemListElement": [{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Inicio",
+				"item": "https://Guille37778.github.io/Digitals-Solutions/"
+			  },
+			  {
+				"@type": "ListItem",
+				"position": 2,
+				"name": title,
+				"item": url
+			  }]
 			}
 		</script>
 

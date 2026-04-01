@@ -3,7 +3,10 @@ import Layout from '../layouts/Layout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<Layout title="Contacto | Digital Solutions">
+<Layout 
+  title="Contacto | Digital Solutions - Consulta Técnica Gratuita"
+  description="Contacta con nuestro equipo de ingeniería web. Ofrecemos consultoría técnica gratuita para proyectos corporativos, e-commerce y branding digital. Respuesta en menos de 60 min."
+>
   
   <!-- 1. HERO SECTION PREMIUM -->
   <section class="relative bg-[#172554] text-white pt-32 pb-16 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[60vh]">
@@ -180,46 +183,59 @@ const base = import.meta.env.BASE_URL;
                 </div>
                 <h4 class="text-2xl font-black text-white tracking-tight">¡Mensaje Enviado!</h4>
                 <p class="text-blue-200 text-sm">Nuestro equipo te responderá en menos de 60 minutos.</p>
-              </div>
+  <script>
+  function setupContactForm() {
+    const contactForm = document.getElementById('contact-form') as HTMLFormElement;
+    const contactSuccess = document.getElementById('contact-success');
+    const contactSubmit = document.getElementById('contact-submit') as HTMLButtonElement;
 
-              <script is:inline>
-                const setupContactForm = () => {
-                  const contactForm = document.getElementById('contact-form');
-                  const contactSuccess = document.getElementById('contact-success');
-                  if (contactForm) {
-                    contactForm.addEventListener('submit', async (e) => {
-                      e.preventDefault();
-                      const btn = document.getElementById('contact-submit');
-                      const originalText = btn.textContent;
-                      btn.textContent = 'Enviando...';
-                      btn.disabled = true;
-                      try {
-                        const res = await fetch(contactForm.action, {
-                          method: 'POST',
-                          body: new FormData(contactForm),
-                          headers: { 'Accept': 'application/json' }
-                        });
-                        if (res.ok) {
-                          contactForm.classList.add('hidden');
-                          contactSuccess.classList.remove('hidden');
-                          contactSuccess.classList.add('flex');
-                        } else {
-                          btn.textContent = 'Error. Reintenta.';
-                          btn.disabled = false;
-                          setTimeout(() => { btn.textContent = originalText; }, 3000);
-                        }
-                      } catch {
-                        btn.textContent = 'Error. Reintenta.';
-                        btn.disabled = false;
-                        setTimeout(() => { btn.textContent = originalText; }, 3000);
-                      }
-                    });
-                  }
-                };
+    if (!contactForm || !contactSuccess || !contactSubmit) return;
 
-                // Run on initial load and every time the page changes
-                document.addEventListener('astro:page-load', setupContactForm);
-              <\/script>
+    // Remove any existing listener to prevent duplicates
+    contactForm.onsubmit = async (e) => {
+      e.preventDefault();
+      
+      const originalText = contactSubmit.innerHTML;
+      contactSubmit.innerText = 'Enviando...';
+      contactSubmit.disabled = true;
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          contactForm.classList.add('hidden');
+          contactSuccess.classList.remove('hidden');
+          contactSuccess.classList.add('flex');
+          // Scroll to success message
+          contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          const data = await response.json();
+          if (Object.hasOwn(data, 'errors')) {
+            throw new Error(data["errors"].map((error: any) => error["message"]).join(", "));
+          } else {
+            throw new Error("Oops! Hubo un problema al enviar el formulario.");
+          }
+        }
+      } catch (error) {
+        contactSubmit.innerText = 'Error. Reintentar';
+        contactSubmit.disabled = false;
+        setTimeout(() => {
+          contactSubmit.innerHTML = originalText;
+        }, 3000);
+      }
+    };
+  }
+
+  // Support both classic and ViewTransitions page loads
+  document.addEventListener('astro:page-load', setupContactForm);
+</script>
             </div>
         </div>
 
